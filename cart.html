@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <nav
+      id="Navbar"
+      class="navbar navbar-expand-lg text-white navbar-fixed-top"
+    >
+      <div class="container-fluid">
+        <a id="logo" class="navbar-brand" href="#">Teacno Shop</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a id="Home" class="nav-link" href="website.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a id="About" class="nav-link" href="#aboutUs">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a id="product" class="nav-link" href="#product">Product</a>
+            </li>
+            <li class="nav-item">
+              <a id="Contact" class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+          <!-- search -->
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn" type="submit">
+              <a><i class="bi bi-search"></i></a>
+            </button>
+          </form>
+          <!-- search end-  -->
+        
+          <div id="cart" class="cart">``
+            <!-- Cart -->
+            <a id="cart-button" href="cart.html"> <i class="bi bi-cart4"></i></a>
+            <!-- cart star -->
+            
+          </div>
+          </div>
+      </div>
+      </nav>
+      <main>
+        <table class="table table-dark table-striped owntab">
+            <tr>
+                <td>gambar</td>
+                <td>nama barang</td>
+                <td>jumlah</td>
+                <td>Harga</td>
+                <td>hapuss</td>
+
+            </tr>
+            <tr>
+                <td><img src="image/moritz-kindler-QJykaAsWhco-unsplash.jpg"></td>
+                <td>phone one plus</td>
+                <td><button class="button btn-dark btn-sm plus"><i class="bi bi-dash-circle"></i></button>
+                <span class="mx-2" num>1</span>
+              <button class="button btn-warning btn-sm min"><i class="bi bi-plus-circle"></i></button></td>
+                <td>$.125</td>
+                <td><i class="bi bi-trash"></i></td>
+            </tr>
+             <tr>
+                <td><img src="image/david-grandmougin-QrUX1AUQKDQ-unsplash (1).jpg"></td>
+                <td>phone one plus</td>
+                <td><button onclick="totalClick(1)" class="button btn-dark btn-sm plus"><i class="bi bi-dash-circle"></i></button>
+                  <span id="num"class="mx-2">1</span>
+                <button onclick="totalClick(-1) "class="button btn-warning btn-sm min"><i class="bi bi-plus-circle"></i></button></td>
+                <td>$.125</td>
+                <td><i class="bi bi-trash"></i></td>
+            </tr>
+            <tr>
+              <td  class="text-white border ">total harga</td>
+              <td class="text-white border">$350</td>
+              <td>check </td>
+              <td>out</td>
+              <td class="text-white border"><button class="button btn btn-primary btn-sm"><i class="bi bi-cart4"></i> </button></td>
+            </tr>
+          </table>
+          <table>
+          
+          </table>
+      </main>
+     
+      <footer class="position-absolute bottom-0 start-50 translate-middle-x">
+        <div class="sosial-media">
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-github"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+        <div class="link">
+          <A href="#home">home</A>
+          <a href="#aboutUs">about </a>
+          <a href="#product">product</a>
+          <a href="#contactUs">contact</a>
+  
+        </div>
+        <div class="credit">
+          <p>created by <span>Agung Hermansyah</span></p>
+  
+        </div>
+      </footer>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"
+      ></script>
+      <script src="cart.js"></script>
+    </body>
+  </html>
+  

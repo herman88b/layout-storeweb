@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@400;500;600&display=swap');
+
+#logo {
+    font-family: 'Oswald',;
+}
+/* navbar */
+.navbar {
+   background-color: rgba(1, 1, 3 ,4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.navbar a {
+    color: rgb(32,175,210);
+}
+.navbar button,#cart{
+padding: 1px;
+color: rgb(32,175,210);
+border: 1px;
+border-color: rgb(32,175,210);
+margin-top: 0,5rem;
+
+}
+body{
+    background-color: rgba(1, 1, 3 , 4);
+     height: 2000px; 
+}
+.navbar i {
+width: 4rem;
+margin: 0,5rem ;
+margin-right: 1rem;
+margin-bottom: 0;
+}
+
+.credit span{
+    color: blue;
+}
+.credit p{
+color: aliceblue;
+}
+
+.credit,.link,.sosial-media{
+    font-size: 1.4rem;
+}
+.credit{
+    margin-bottom: 2rem;
+}
+
+footer{
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* tabel  */
+.owntab{
+    color: aliceblue;
+}
+table{
+    border: 1px solid #ffff;
+    margin: 3rem 1.5rem;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+}
+table img{
+    width: 150px;
+    
+}
+footer{
+    text-align: center;
+    align-items: center;
+}

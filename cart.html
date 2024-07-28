@@ -49,6 +49,9 @@
             <li class="nav-item">
               <a id="Contact" class="nav-link" href="#contact">Contact Us</a>
             </li>
+            <li class="nav-item m-2 cart" id="cart" >
+              <a id="cart-button" href="cart.html"> <i class="bi bi-cart4"></i></a>
+            </li>
           </ul>
           <!-- search -->
           <form class="d-flex" role="search">
@@ -64,57 +67,36 @@
           </form>
           <!-- search end-  -->
         
-          <div id="cart" class="cart">``
-            <!-- Cart -->
-            <a id="cart-button" href="cart.html"> <i class="bi bi-cart4"></i></a>
-            <!-- cart star -->
-            
-          </div>
           </div>
       </div>
       </nav>
       <main>
-        <table class="table table-dark table-striped owntab">
-            <tr>
+        <table class="table table-dark table-striped owntab " id="cartable">
+          <thead>  
+          <tr>
                 <td>gambar</td>
                 <td>nama barang</td>
                 <td>jumlah</td>
                 <td>Harga</td>
                 <td>hapuss</td>
-
             </tr>
-            <tr>
-                <td><img src="image/moritz-kindler-QJykaAsWhco-unsplash.jpg"></td>
-                <td>phone one plus</td>
-                <td><button class="button btn-dark btn-sm plus"><i class="bi bi-dash-circle"></i></button>
-                <span class="mx-2" num>1</span>
-              <button class="button btn-warning btn-sm min"><i class="bi bi-plus-circle"></i></button></td>
-                <td>$.125</td>
-                <td><i class="bi bi-trash"></i></td>
-            </tr>
-             <tr>
-                <td><img src="image/david-grandmougin-QrUX1AUQKDQ-unsplash (1).jpg"></td>
-                <td>phone one plus</td>
-                <td><button onclick="totalClick(1)" class="button btn-dark btn-sm plus"><i class="bi bi-dash-circle"></i></button>
-                  <span id="num"class="mx-2">1</span>
-                <button onclick="totalClick(-1) "class="button btn-warning btn-sm min"><i class="bi bi-plus-circle"></i></button></td>
-                <td>$.125</td>
-                <td><i class="bi bi-trash"></i></td>
-            </tr>
-            <tr>
-              <td  class="text-white border ">total harga</td>
-              <td class="text-white border">$350</td>
-              <td>check </td>
-              <td>out</td>
-              <td class="text-white border"><button class="button btn btn-primary btn-sm"><i class="bi bi-cart4"></i> </button></td>
-            </tr>
-          </table>
-          <table>
+          </thead>
+          <tbody>
           
+    
+          </tbody>
+          <tr>
+            <td  class="text-white border ">total harga</td>
+            <td class="text-white border" >$ <span id="totalPrice"></span></td>
+            <td>check </td>
+            <td>out</td>
+            <td class="text-white border"><a href="payment.html"><button class="button btn btn-primary btn-sm"><i class="bi bi-cart4"></i> </button></a></td>
+          </tr>
           </table>
       </main>
      
-      <footer class="position-absolute bottom-0 start-50 translate-middle-x">
+      <footer class="">
+        <div class="contain container text-center">
         <div class="sosial-media">
           <a href=""><i class="bi bi-instagram"></i></a>
           <a href=""><i class="bi bi-facebook"></i></a>
@@ -122,15 +104,14 @@
           <a href=""><i class="bi bi-linkedin"></i></a>
         </div>
         <div class="link">
-          <A href="#home">home</A>
-          <a href="#aboutUs">about </a>
-          <a href="#product">product</a>
-          <a href="#contactUs">contact</a>
-  
+        <a href="#home">home</a>
+        <a href="#aboutUs">about </a>
+        <a href="#product">product</a>
+        <a href="#contactUs">contact</a>
+     
         </div>
         <div class="credit">
-          <p>created by <span>Agung Hermansyah</span></p>
-  
+          <h1>created by <span>Agung Hermansyah</span></h1>
         </div>
       </footer>
       <script
@@ -138,7 +119,7 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"
       ></script>
-      <script src="cart.js"></script>
+      <script src="script.js"></script>
     </body>
   </html>
   
